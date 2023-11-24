@@ -18,5 +18,6 @@ jobs:
         id: checkov
         uses: bridgecrewio/checkov-action@master
         with:
-          directory: checkov-test/
+          directory: .
+          file: test-iac-file.yml
           framework: cloudformation
